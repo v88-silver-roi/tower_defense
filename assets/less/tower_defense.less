@@ -1,7 +1,9 @@
 *{
 
     body{
-        #container{
+        margin: 0px;
+
+        #world_container{
             #world{
                 border-spacing: 0px;
 
@@ -9,7 +11,7 @@
                     display: block;
 
                     td{
-                        border: 2px solid #b1d5f1;
+                        // border: 2px solid #b1d5f1;
                         height: 40px;
                         width: 40px;
                     }
@@ -25,35 +27,76 @@
                     .grass{
                         background-color: #65be84;
                     }
+
+                    img{
+                        align-items: center;
+                        display: flex;
+                        height: 30px;
+                        justify-content: center;
+                        margin: 0px auto;
+                        width: 30px;
+                    }
+
+                    .disabled{
+                        opacity: 0.5;
+                    }
                 }            
             }   
         }
 
-        #tower{
-            button{
-                cursor: pointer;
-                height: 40px;
-                padding: 0px;
-                width: 40px;
+        #controls_container{
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 20px;
 
-                img{
-                    align-items: center;
-                    display: flex;
-                    height: 30px;
-                    justify-content: center;
-                    margin: 0px auto;
-                    width: 30px;
+            >div{
+                margin-right: -20px;
+
+                h3{
+                    margin: 0px;
+                }
+
+                p{
+                    margin: 10px 0px;
                 }
             }
-        }
 
-        #start_wave{
-            background-color: #2b78e4;
-            box-shadow: 1px solid #000000;
-            color: white;
-            font-size: 20px;
-            margin-top: 10px;
-            padding: 10px;
+            #tower_buttons{
+                margin-right: 80px;
+
+                .tower{
+                    cursor: pointer;
+                    height: 40px;
+                    padding: 0px;
+                    width: 40px;
+    
+                    img{
+                        align-items: center;
+                        display: flex;
+                        height: 30px;
+                        justify-content: center;
+                        margin: 0px auto;
+                        width: 30px;
+                    }
+                }
+            }
+    
+            #start_wave{
+                background-color: #2b78e4;
+                box-shadow: 1px solid #000000;
+                color: white;
+                font-size: 20px;
+                height: 50px;
+                padding: 10px;
+            }
+
+            .active{
+                background-color: #2b78e4;
+            }
+
+            .disabled{
+                opacity: 0.5;
+            }
         }
     }
 }

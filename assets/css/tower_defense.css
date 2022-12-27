@@ -1,30 +1,26 @@
-* body #container #world {
+* body {
+  margin: 0px;
+}
+* body #world_container #world {
   border-spacing: 0px;
 }
-* body #container #world .row {
+* body #world_container #world .row {
   display: block;
 }
-* body #container #world .row td {
-  border: 2px solid #b1d5f1;
+* body #world_container #world .row td {
   height: 40px;
   width: 40px;
 }
-* body #container #world .row .soil {
+* body #world_container #world .row .soil {
   background-color: #a18e7f;
 }
-* body #container #world .row .water {
+* body #world_container #world .row .water {
   background-color: #cadef9;
 }
-* body #container #world .row .grass {
+* body #world_container #world .row .grass {
   background-color: #65be84;
 }
-* body #tower button {
-  cursor: pointer;
-  height: 40px;
-  padding: 0px;
-  width: 40px;
-}
-* body #tower button img {
+* body #world_container #world .row img {
   align-items: center;
   display: flex;
   height: 30px;
@@ -32,11 +28,51 @@
   margin: 0px auto;
   width: 30px;
 }
-* body #start_wave {
+* body #world_container #world .row .disabled {
+  opacity: 0.5;
+}
+* body #controls_container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+* body #controls_container > div {
+  margin-right: -20px;
+}
+* body #controls_container > div h3 {
+  margin: 0px;
+}
+* body #controls_container > div p {
+  margin: 10px 0px;
+}
+* body #controls_container #tower_buttons {
+  margin-right: 80px;
+}
+* body #controls_container #tower_buttons .tower {
+  cursor: pointer;
+  height: 40px;
+  padding: 0px;
+  width: 40px;
+}
+* body #controls_container #tower_buttons .tower img {
+  align-items: center;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  margin: 0px auto;
+  width: 30px;
+}
+* body #controls_container #start_wave {
   background-color: #2b78e4;
   box-shadow: 1px solid #000000;
   color: white;
   font-size: 20px;
-  margin-top: 10px;
+  height: 50px;
   padding: 10px;
+}
+* body #controls_container .active {
+  background-color: #2b78e4;
+}
+* body #controls_container .disabled {
+  opacity: 0.5;
 }

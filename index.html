@@ -8,21 +8,24 @@
 
     <!-- Custom CSS/JS -->
     <link rel="stylesheet" href="./assets/css/tower_defense.css">
-    <script src="./assets/js/tower_defense.js"></script>
+    <script src="./assets/js/tower_defense.js" defer></script>
 <body>
-    <div id='container'>
+    <div id="world_container">
 		<table id='world'></table>
 	</div>
-        <h3 id="wave">Wave #<span>1</span></h3>
-        <p id="life_points">Life Points: <span>0</span></p>
-        <p id="enemies_destroyed">Enemies Destroyed: <span>0</span></p>
-        <p id="resources">Resources: <span>2</span></p>
+    <div id="controls_container">
+        <div>
+            <h3 id="wave">Wave #<span>1</span></h3>
+            <p id="life_points">Life Pts: <span></span></p>
+            <p id="enemies_destroyed">Enemies Destroyed: <span></span></p>
+            <p id="resources">Resources: <span></span></p>
+        </div>
+        <div id="tower_buttons">
+            <button id="tower" class="tower active"><img src="./assets/images/tower.png" alt="tower"></button>
+            <button id="control_tower" class="tower"><img src="./assets/images/control-tower.png" alt="control tower"></button>
+            <button id="sea_tower" class="tower"><img src="./assets/images/sea-tower.png" alt="sea tower"></button>
+        </div>
+        <button id="start_wave">START WAVE (in 30 sec)</button>
     </div>
-    <div id="tower">
-        <button><img src="./assets/images/tower.png" alt="tower"></button>
-        <button><img src="./assets/images/control-tower.png" alt="control tower"></button>
-        <button><img src="./assets/images/sea-tower.png" alt="sea tower"></button>
-    </div>
-    <button id="start_wave">START WAVE (in 30 sec)</button>
 </body>
 </html>
