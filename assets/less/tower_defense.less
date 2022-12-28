@@ -1,3 +1,4 @@
+@tile_size: 40px;
 *{
 
     body{
@@ -12,8 +13,8 @@
 
                     td{
                         // border: 2px solid #b1d5f1;
-                        height: 40px;
-                        width: 40px;
+                        height: @tile_size;
+                        width: @tile_size;
                     }
 
                     .soil{
@@ -59,6 +60,20 @@
                 p{
                     margin: 10px 0px;
                 }
+
+                #life_points{
+                    span{
+                        color: #65be84;
+                    }
+                }
+
+                .orange{
+                    color: #e1b222 !important;
+                }
+
+                .red{
+                    color: #dd3f34 !important;
+                }
             }
 
             #tower_buttons{
@@ -97,6 +112,20 @@
             .disabled{
                 opacity: 0.5;
             }
+        }
+
+        .normal_bug{
+            background: url("../images/normal-bug.png");
+            background-size: cover;
+            height: 40px;
+            left: 0px;
+            position:absolute;
+            top: 0px;
+            width: 40px;
+        }
+
+        .right_front_bug{
+            transform: rotate(0.25turn);
         }
     }
 }
