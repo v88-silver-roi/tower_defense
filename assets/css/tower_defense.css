@@ -1,69 +1,30 @@
-* body {
-  margin: 0px;
-}
-* body #world_container #world {
+* body #container #world {
   border-spacing: 0px;
 }
-* body #world_container #world .row {
+* body #container #world .row {
   display: block;
 }
-* body #world_container #world .row td {
+* body #container #world .row td {
+  border: 2px solid #b1d5f1;
   height: 40px;
   width: 40px;
 }
-* body #world_container #world .row .soil {
+* body #container #world .row .soil {
   background-color: #a18e7f;
 }
-* body #world_container #world .row .water {
+* body #container #world .row .water {
   background-color: #cadef9;
 }
-* body #world_container #world .row .grass {
+* body #container #world .row .grass {
   background-color: #65be84;
 }
-* body #world_container #world .row img {
-  align-items: center;
-  display: flex;
-  height: 30px;
-  justify-content: center;
-  margin: 0px auto;
-  width: 30px;
-}
-* body #world_container #world .row .disabled {
-  opacity: 0.5;
-}
-* body #controls_container {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 20px;
-}
-* body #controls_container > div {
-  margin-right: -20px;
-}
-* body #controls_container > div h3 {
-  margin: 0px;
-}
-* body #controls_container > div p {
-  margin: 10px 0px;
-}
-* body #controls_container > div #life_points span {
-  color: #65be84;
-}
-* body #controls_container > div .orange {
-  color: #e1b222 !important;
-}
-* body #controls_container > div .red {
-  color: #dd3f34 !important;
-}
-* body #controls_container #tower_buttons {
-  margin-right: 80px;
-}
-* body #controls_container #tower_buttons .tower {
+* body #tower button {
   cursor: pointer;
   height: 40px;
   padding: 0px;
   width: 40px;
 }
-* body #controls_container #tower_buttons .tower img {
+* body #tower button img {
   align-items: center;
   display: flex;
   height: 30px;
@@ -71,29 +32,11 @@
   margin: 0px auto;
   width: 30px;
 }
-* body #controls_container #start_wave {
+* body #start_wave {
   background-color: #2b78e4;
   box-shadow: 1px solid #000000;
   color: white;
   font-size: 20px;
-  height: 50px;
+  margin-top: 10px;
   padding: 10px;
-}
-* body #controls_container .active {
-  background-color: #2b78e4;
-}
-* body #controls_container .disabled {
-  opacity: 0.5;
-}
-* body .normal_bug {
-  background: url("../images/normal-bug.png");
-  background-size: cover;
-  height: 40px;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 40px;
-}
-* body .right_front_bug {
-  transform: rotate(0.25turn);
 }
