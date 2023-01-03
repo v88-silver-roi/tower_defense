@@ -58,6 +58,7 @@
   margin-right: 80px;
 }
 * body #controls_container #tower_buttons .tower {
+  background-color: transparent;
   cursor: pointer;
   height: 40px;
   padding: 0px;
@@ -80,9 +81,10 @@
   padding: 10px;
 }
 * body #controls_container .active {
-  background-color: #2b78e4;
+  background-color: #2b78e4 !important;
 }
 * body #controls_container .disabled {
+  background-color: transparent !important;
   opacity: 0.5;
 }
 * body .normal_bug {
@@ -94,6 +96,56 @@
   top: 0px;
   width: 40px;
 }
+* body .elite_bug {
+  background: url("../images/elite-bug.png");
+  background-size: cover;
+  height: 40px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 40px;
+}
 * body .right_front_bug {
   transform: rotate(0.25turn);
+}
+* body .modal {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  height: 100%;
+  left: 0;
+  padding-top: 100px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+* body .modal .modal_content {
+  background-color: #fefefe;
+  border: 2px solid #000000 !important;
+  height: fit-content;
+  margin: auto;
+  width: 40%;
+}
+* body .modal .modal_content .modal_header {
+  border-bottom: 2px solid #000000;
+}
+* body .modal .modal_content .modal_header h5 {
+  margin: 0px;
+}
+* body .modal .modal_content .modal_body {
+  padding: 20px;
+  text-align: center;
+}
+* body .modal .modal_content .modal_body h1,
+* body .modal .modal_content .modal_body h2,
+* body .modal .modal_content .modal_body h3 {
+  margin: 0px 0px 15px 0px;
+}
+* body .modal .modal_content .modal_body button {
+  background-color: #009e0f;
+  color: #ffffff;
+  padding: 5px 20px;
+}
+* body .unhide {
+  display: block !important;
 }
